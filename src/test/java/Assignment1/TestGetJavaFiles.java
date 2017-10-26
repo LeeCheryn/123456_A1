@@ -14,7 +14,7 @@ import org.junit.Test;
 public class TestGetJavaFiles {
     
     String directory = System.getProperty("user.dir");
-    String filePath = directory + "/src/test/java/Assignment1";
+    String filePath = directory + "/src/test/java/Assignment1"; //use the test files in test packages as resources to test
     
     @Test
     public void TestGetJavaFiles1(){
