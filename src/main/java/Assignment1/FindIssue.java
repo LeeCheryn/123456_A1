@@ -21,7 +21,7 @@ public class FindIssue {
             String fileName = file.getName();
             int removeType = fileName.lastIndexOf(".");
             if (removeType > 0) {
-                fileName = fileName.substring(0, removeType);
+                fileName = fileName.substring(0, removeType); //to remove ".java" from the file name
             }
             
             FindIssue f = new FindIssue();
