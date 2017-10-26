@@ -20,7 +20,7 @@ public class CountIssue {
         GetJavaFiles j = new GetJavaFiles();
        
         try {
-            packageName = j.getClass().getPackage().getName();
+            packageName = j.getClass().getPackage().getName(); //to retrieve package name of this class
             packageName = packageName.replace(".","/");
             filePath = directory+"/src/main/java/"+packageName+"/";
             
