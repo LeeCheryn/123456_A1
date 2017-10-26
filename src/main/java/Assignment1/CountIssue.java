@@ -22,10 +22,10 @@ public class CountIssue {
         try {
             packageName = j.getClass().getPackage().getName(); //to retrieve package name of this class
             packageName = packageName.replace(".","/");
-            filePath = directory+"/src/main/java/"+packageName+"/";
+            filePath = directory+"/src/main/java/"+packageName+"/"; //for file that inside a package
             
         }catch (Exception e){
-            filePath = directory+"/src/main/java";
+            filePath = directory+"/src/main/java"; //for file that inside default package
         }
         
         GetJavaFiles javaFiles = new GetJavaFiles();
